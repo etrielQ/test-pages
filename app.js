@@ -77,7 +77,7 @@ new Vue({
         },
         monster_progress: function(){
             return {
-                width : this.player_heal + '%'  
+                width : this.monster_heal + '%'  
             }    
         }
     }

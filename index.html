@@ -35,7 +35,9 @@
         <div class="small-12 columns">
             <button id="attack" @click="attack">SALDIRI</button>
             <button id="special-attack" @click="special_attack">ÖZEL SALDIRI</button>
-            <button id="heal" @click="heal_up">İLK YARDIM</button>
+            <button id="heal" :class="{disabledHeal: disabled_heal}" @click="heal_up(); heal_up_limited();">İLK YARDIM
+                {{ heal_up_limit }}
+            </button>
             <button id="give-up" @click="give_up">PES ET!</button>
         </div>
     </section>'
